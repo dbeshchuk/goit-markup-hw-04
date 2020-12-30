@@ -411,6 +411,13 @@ footer .link {
   margin-bottom: 30px;
 }
 
+.portfolio-card > .item:focus,
+.portfolio-card > .item:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card-description {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -462,8 +469,8 @@ footer .link {
 
 .clients-link:hover,
 .clients-link:focus {
-  color: var(--primary-background-color);
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-icon {
@@ -491,11 +498,24 @@ footer .link {
   border-radius: 50%;
 }
 
+.social-block > li {
+  margin-right: 10px;
+}
+
+.social-block > li:last-child {
+  margin-right: 0px;
+}
+
 .social-icon {
   width: 20px;
   height: 20px;
 
   fill: currentColor;
+}
+
+.footer-social .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-background-color);
 }
 
 .team-box .social-link {
@@ -506,8 +526,4 @@ footer .link {
 .social-link:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
-}
-
-.footer-social .social-link {
-  color: var(--primary-background-color);
 }
